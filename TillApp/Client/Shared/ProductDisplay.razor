@@ -1,0 +1,110 @@
+﻿@inject HttpClient http
+@inject Microsoft.AspNetCore.Components.NavigationManager navigation
+@using TillApp.Shared.Models
+
+<div class="row">
+    <EditForm Model="@order" class="form-inline" style="margin-bottom: 10px;" OnValidSubmit="@(async () => await saveOrder())">
+
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div class="col">
+            <p>
+                <input @bind="order.OrderName" type="text" class="form-control" placeholder="Order Name Here">
+            </p>
+        </div>
+        <div class="col">
+            <p>
+                <text id="amount"> @order.Amount </text>
+            </p>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </div>
+
+    </EditForm>
+</div>
+
+
+
+<div class="row">
+    @if (products == null)
+    {
+        <tex>Loading...</tex>
+    }
+    else if (products.Length == 0)
+    {
+        <text> There Are no Products </text>
+    }
+    else
+    {
+        @foreach (var product in products)
+        {
+            <ProductItem EventFromChild=@TriggerFromChild Id="@product.Id" imgSrc="@product.ImgSrc" productName="@product.ProductName" Price="@product.Price" />
+        }
+    }
+</div>
+
+
+
+@code {
+    List<Item> itemsInCart = new List<Item>();
+    Product[] products { get; set; }
+    Order order = new Order();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadProducts();
+    }
+
+    async Task LoadProducts()
+    {
+        products = await http.GetJsonAsync<Product[]>("api/products");
+    }
+
+    private void TriggerFromChild(Item item)
+    {
+        StateHasChanged();
+        if (itemsInCart.Count == 0)
+        {
+            itemsInCart.Add(item);
+        }
+        else
+        {
+            var itemFromList = itemsInCart.Where(x => x.ProductID == item.ProductID).FirstOrDefault();
+            if (itemFromList == null)
+            {
+                itemsInCart.Add(item);
+            }
+            else
+            {
+                if (item.Quantity == 0)
+                {
+                    itemsInCart.RemoveAll(x => x.ProductID == item.ProductID);
+                }
+                else
+                {
+                    itemFromList.Quantity = item.Quantity;
+                    var tempProduct = products.Where(x => x.Id == item.ProductID).FirstOrDefault();
+                    itemFromList.Cost = tempProduct.Price * item.Quantity;
+                }
+            }
+        }
+
+
+        order.Amount = itemsInCart.Sum(x => x.Cost);
+    }
+
+
+    private async Task saveOrder()
+    {
+        
+        var createdOrderId = await http.SendJsonAsync<Order>(HttpMethod.Post, "api/orders", order);
+        foreach (var i in itemsInCart)
+        {
+            i.OrderID = createdOrderId.OrderId;
+        }
+        await http.SendJsonAsync(HttpMethod.Post, "api/items", itemsInCart);
+        navigation.NavigateTo("/", true);
+    }
+
+}

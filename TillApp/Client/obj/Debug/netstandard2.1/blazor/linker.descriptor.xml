@@ -1,0 +1,5 @@
+﻿<linker>
+  <assembly fullname="TillApp.Client">
+    <type fullname="*" required="true" />
+  </assembly>
+</linker>

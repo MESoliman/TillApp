@@ -1,0 +1,67 @@
+﻿
+
+<div class="col">
+    <div class="card" style="margin-bottom: 10px; width: 20rem;height: 25rem;">
+        <img style="width: 100%; height: 55%;" src="@imgSrc" class="card-img-top" alt="banana">
+        <div class="card-body">
+            <h5 class="card-title">@productName</h5>
+            <p class="card-text">price : @Price</p>
+            <div class="row no-gutters">
+                <div class="col-2">
+                    <button class="btn btn-secondary btn-block" @onclick="removeFromCart">-</button>
+                </div>
+                <div class="col text-center">
+                    @quantity in cart
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-secondary btn-block" @onclick="addToCart">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    [Parameter]
+    public string imgSrc { get; set; }
+    [Parameter]
+    public string productName { get; set; }
+    [Parameter]
+    public Decimal Price { get; set; }
+    [Parameter]
+    public EventCallback<Item> EventFromChild {get;set;}
+
+    
+    int quantity = 0;
+
+    private void addToCart()
+    {
+        quantity++;
+        Trigger();
+    }
+
+    private void removeFromCart()
+    {
+        if (quantity > 0)
+        {
+            quantity--;
+            Trigger();
+        }
+    }
+
+    private void Trigger()
+    {
+         var itemToAdd = new Item
+         {
+            ProductID = Id,
+            Quantity = quantity,
+            Cost = Price * quantity
+         };
+
+        EventFromChild.InvokeAsync(itemToAdd);
+    }
+
+}

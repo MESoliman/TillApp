@@ -1,0 +1,8 @@
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\bin\Debug\netstandard2.1\TillApp.Shared.deps.json
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\bin\Debug\netstandard2.1\TillApp.Shared.dll
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\bin\Debug\netstandard2.1\TillApp.Shared.pdb
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\obj\Debug\netstandard2.1\TillApp.Shared.csprojAssemblyReference.cache
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\obj\Debug\netstandard2.1\TillApp.Shared.AssemblyInfoInputs.cache
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\obj\Debug\netstandard2.1\TillApp.Shared.AssemblyInfo.cs
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\obj\Debug\netstandard2.1\TillApp.Shared.dll
+C:\Users\speedTECH\source\repos\TillApp\TillApp\Shared\obj\Debug\netstandard2.1\TillApp.Shared.pdb

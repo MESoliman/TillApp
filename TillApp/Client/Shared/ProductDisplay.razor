@@ -97,13 +97,10 @@
 
     private async Task saveOrder()
     {
+
+        order.Items = itemsInCart;
+        await http.SendJsonAsync(HttpMethod.Post, "api/orders", order);
         
-        var createdOrderId = await http.SendJsonAsync<Order>(HttpMethod.Post, "api/orders", order);
-        foreach (var i in itemsInCart)
-        {
-            i.OrderID = createdOrderId.OrderId;
-        }
-        await http.SendJsonAsync(HttpMethod.Post, "api/items", itemsInCart);
         navigation.NavigateTo("/", true);
     }
 

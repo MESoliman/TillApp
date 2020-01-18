@@ -88,7 +88,7 @@ namespace TillApp.Server.Controllers
 
             var createdOrder = _context.Orders.MaxAsync(x => x.OrderId);
 
-            return order;
+            return Ok();
         }
 
         // DELETE: api/Orders/5

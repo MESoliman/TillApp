@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TillApp.Client", "TillApp\C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TillApp.Shared", "TillApp\Shared\TillApp.Shared.csproj", "{6F32FA48-9B0B-4A82-A8E6-6DB5390C40FA}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TillAppDatabase", "TillAppDatabase\TillAppDatabase.sqlproj", "{E21D526A-7110-4A59-A336-F9C33FE6AD2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{6F32FA48-9B0B-4A82-A8E6-6DB5390C40FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F32FA48-9B0B-4A82-A8E6-6DB5390C40FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F32FA48-9B0B-4A82-A8E6-6DB5390C40FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21D526A-7110-4A59-A336-F9C33FE6AD2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21D526A-7110-4A59-A336-F9C33FE6AD2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21D526A-7110-4A59-A336-F9C33FE6AD2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E21D526A-7110-4A59-A336-F9C33FE6AD2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21D526A-7110-4A59-A336-F9C33FE6AD2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21D526A-7110-4A59-A336-F9C33FE6AD2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

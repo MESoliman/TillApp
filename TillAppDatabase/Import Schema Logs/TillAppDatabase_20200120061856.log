@@ -1,0 +1,85 @@
+1/19/2020 10:18:56 PM	This log contains information about the import schema operation into project 'TillAppDatabase' on computer 'DESKTOP-TKRJN48' by user 'speedTECH'.
+1/19/2020 10:18:56 PM	Import of database schema has started.
+1/19/2020 10:19:07 PM	Gathering database credentials
+1/19/2020 10:19:07 PM	Gathering database options
+1/19/2020 10:19:07 PM	Gathering users
+1/19/2020 10:19:07 PM	Gathering roles
+1/19/2020 10:19:07 PM	Gathering application roles
+1/19/2020 10:19:07 PM	Gathering role memberships
+1/19/2020 10:19:07 PM	Gathering filegroups
+1/19/2020 10:19:07 PM	Gathering full-text catalogs
+1/19/2020 10:19:07 PM	Gathering assemblies
+1/19/2020 10:19:07 PM	Gathering certificates
+1/19/2020 10:19:07 PM	Gathering asymmetric keys
+1/19/2020 10:19:07 PM	Gathering symmetric keys
+1/19/2020 10:19:07 PM	Gathering encrypted symmetric keys
+1/19/2020 10:19:07 PM	Gathering schemas
+1/19/2020 10:19:07 PM	Gathering XML schema collections
+1/19/2020 10:19:07 PM	Gathering user-defined data types
+1/19/2020 10:19:07 PM	Gathering user-defined types
+1/19/2020 10:19:07 PM	Gathering table types
+1/19/2020 10:19:07 PM	Gathering unique keys for table types
+1/19/2020 10:19:07 PM	Gathering primary keys for table types
+1/19/2020 10:19:07 PM	Gathering indexes for table types
+1/19/2020 10:19:07 PM	Gathering check constraints for table types
+1/19/2020 10:19:07 PM	Gathering default constraints for table types
+1/19/2020 10:19:07 PM	Gathering partition functions
+1/19/2020 10:19:07 PM	Gathering partition schemes
+1/19/2020 10:19:07 PM	Gathering functions
+1/19/2020 10:19:07 PM	Gathering encrypted functions
+1/19/2020 10:19:07 PM	Gathering aggregates
+1/19/2020 10:19:07 PM	Gathering procedures
+1/19/2020 10:19:07 PM	Gathering encrypted procedures
+1/19/2020 10:19:07 PM	Gathering tables
+1/19/2020 10:19:07 PM	Gathering primary keys
+1/19/2020 10:19:07 PM	Gathering unique constraints
+1/19/2020 10:19:07 PM	Gathering foreign keys
+1/19/2020 10:19:07 PM	Gathering default constraints
+1/19/2020 10:19:07 PM	Gathering check constraints
+1/19/2020 10:19:07 PM	Gathering views
+1/19/2020 10:19:07 PM	Gathering encrypted views
+1/19/2020 10:19:08 PM	Gathering indexes
+1/19/2020 10:19:08 PM	Gathering statistics
+1/19/2020 10:19:08 PM	Gathering full-text index stoplists
+1/19/2020 10:19:08 PM	Gathering search property lists
+1/19/2020 10:19:08 PM	Gathering search properties
+1/19/2020 10:19:08 PM	Gathering full-text indexes
+1/19/2020 10:19:08 PM	Gathering column store indexes
+1/19/2020 10:19:08 PM	Gathering spatial indexes
+1/19/2020 10:19:08 PM	Gathering XML indexes
+1/19/2020 10:19:08 PM	Gathering Selective XML indexes
+1/19/2020 10:19:08 PM	Gathering encrypted triggers
+1/19/2020 10:19:08 PM	Gathering triggers
+1/19/2020 10:19:08 PM	Gathering encrypted and clr ddl triggers
+1/19/2020 10:19:08 PM	Gathering ddl triggers
+1/19/2020 10:19:08 PM	Gathering synonyms
+1/19/2020 10:19:08 PM	Gathering defaults
+1/19/2020 10:19:08 PM	Gathering data constraint uddt bindings
+1/19/2020 10:19:08 PM	Gathering rules
+1/19/2020 10:19:08 PM	Gathering data constraint uddt bindings
+1/19/2020 10:19:08 PM	Gathering message types
+1/19/2020 10:19:08 PM	Gathering queues
+1/19/2020 10:19:08 PM	Gathering contracts
+1/19/2020 10:19:08 PM	Gathering services
+1/19/2020 10:19:08 PM	Gathering event notifications
+1/19/2020 10:19:08 PM	Gathering remote service bindings
+1/19/2020 10:19:08 PM	Gathering broker priorities
+1/19/2020 10:19:08 PM	Gathering signatures
+1/19/2020 10:19:08 PM	Gathering data compression options
+1/19/2020 10:19:08 PM	Gathering sequence types
+1/19/2020 10:19:08 PM	Gathering security policies
+1/19/2020 10:19:08 PM	Gather column encryption keys
+1/19/2020 10:19:08 PM	Gathering column master keys
+1/19/2020 10:19:08 PM	Gathering external data sources
+1/19/2020 10:19:08 PM	Gathering external file formats
+1/19/2020 10:19:08 PM	Gathering external tables
+1/19/2020 10:19:08 PM	Gathering database permissions
+1/19/2020 10:19:08 PM	Gathering extended properties
+1/19/2020 10:19:08 PM	Gathering credentials
+1/19/2020 10:19:08 PM	Gathering logins
+1/19/2020 10:19:08 PM	Gathering server audits
+1/19/2020 10:19:11 PM	Scanning project for duplicate elements
+1/19/2020 10:19:11 PM	Finished duplicate element processing
+1/19/2020 10:19:12 PM	Finished importing database.
+1/19/2020 10:19:12 PM	A summary of the import was saved to the following location: C:\Users\speedTECH\source\repos\TillApp\TillAppDatabase\Import Schema Logs\TillAppDatabase_20200120061856.log
+1/19/2020 10:19:12 PM	Click Finish to continue...
